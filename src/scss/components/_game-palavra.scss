@@ -1,0 +1,53 @@
+.game-wrapper {
+    width: 100%;
+    // height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .quest-wrapper,
+    .options-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // gap: 1rem;
+    }
+
+    .quest-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        img {
+            width: 20%;
+            border-radius: 50%;
+            border: 5px solid #000;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 6rem;
+        }
+    }
+
+    .options-wrapper {
+        gap: 2rem;
+
+        .button {
+            font-size: 2rem;
+            cursor: pointer;
+            
+            &:hover {
+                background: none;
+            }
+        }
+
+        .button-err {
+            background: none;
+            color: #000;
+        }
+    }
+}
